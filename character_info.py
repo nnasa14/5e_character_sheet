@@ -24,7 +24,7 @@ class Char_info:
             if item == info:
                 self.info[item] = description
 
-    def delete_info(self, info, description):
+    def delete_info(self, info):
         for item in self.info:
             if item == info:
                 self.info.remove(item)
@@ -34,7 +34,7 @@ class Char_info:
             if item == info:
                 self.info[item] = description
 
-    def search_info(self, info)
+    def search_info(self, info):
         for item in self.info:
             if item == info:
                 return self.info[item]
