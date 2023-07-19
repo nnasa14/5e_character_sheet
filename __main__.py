@@ -5,3 +5,9 @@
 #   insight, intimidation, investigation, investigation, medicine, nature, perception
 #   performance, persuasion, religion, sleight of hand, stealth, survival)
 #combat stats (AC, initiative, speed)
+
+import character_info
+import combat_stats
+import save_throws
+import skills
+import stats
