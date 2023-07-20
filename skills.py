@@ -3,34 +3,54 @@ import stats
 class Skills:
     def __init__(self):
         self.info = []
-        self.acrobatics = acrobatics 
-        self.animal_handling = animal_handling
-        self.arcana = arcana
-        self.deception = deception 
-        self.history = history
-        self.insight = insight
-        self.intimidation = intimidation 
-        self.investigation = investigation
-        self.medicine = medicine
-        self.nature = nature 
-        self.perception = perception
-        self.performance = performance
-        self.persuasion = persuasion
-        self.religion = religion 
-        self.sleight_of_hand = sleight_of_hand
-        self.stealth = stealth
-        self.survival = survival 
+        self.acrobatics = 0 
+        self.animal_handling = 0
+        self.arcana = 0
+        self.deception = 0 
+        self.history = 0
+        self.insight = 0
+        self.intimidation = 0 
+        self.investigation = 0
+        self.medicine = 0
+        self.nature = 0 
+        self.perception = 0
+        self.performance = 0
+        self.persuasion = 0
+        self.religion = 0 
+        self.sleight_of_hand = 0
+        self.stealth = 0
+        self.survival = 0 
 
     def __str__(self):
         return f"{self.info}"
 
-    def add_info(self, skill, integer):
+    def generate_skill(self, skill):
+        if skill == "STR":
+            pass
+
+        if skill == "INT":
+            pass
+
+        if skill == "WIS":
+            pass
+        
+        if skill == "DEX":
+            pass
+
+        if skill == "CON":
+            pass
+
+        if skill == "CHA":
+            pass
+
+    def add_skill(self, skill):
         for item in self.info:
             if skill in self.info:
                 return f"Already archived"
+        
+        skill = Skills.generate_skill(skill)
             
-        else:
-            self.info.append(skill, integer)
+        self.info.append(skill)
 
     def edit_info(self, skill, integer):
         for item in self.info:

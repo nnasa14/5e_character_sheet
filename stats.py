@@ -1,12 +1,12 @@
 class Stats:
     def __init__(self):
         self.info = []
-        self.strength = strength 
-        self.dex = dex
-        self.con = con
-        self.intel = intel 
-        self.wis = wis
-        self.char = char
+        self.strength = 0 
+        self.dex = 0
+        self.con = 0
+        self.intel = 0 
+        self.wis = 0
+        self.char = 0
 
     def __str__(self):
         return f"{self.info}"
